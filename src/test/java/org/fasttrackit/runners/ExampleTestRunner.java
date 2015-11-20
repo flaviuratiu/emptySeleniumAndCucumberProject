@@ -7,12 +7,12 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(
         monochrome = true,
-        plugin =  {"rerun", "html:target/cucumber","json:target/jsonReports/AdminLoginTest.json"},
+        plugin =  {"rerun", "html:target/cucumber","json:target/jsonReports/ExampleTest.json"},
         glue = {"org.fasttrackit"},
         features = {
-                "src/test/resources/features/validation-test.feature"
+                "src/test/resources/features/example-test.feature"
         }
 )
 
-public class ValidationTestRunner {
+public class ExampleTestRunner {
 }
