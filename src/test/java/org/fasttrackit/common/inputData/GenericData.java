@@ -13,7 +13,5 @@ public class GenericData extends PropertiesReader {
 
     static GenericData genericData = new GenericData();
 
-    public static String getLoginUrl() {
-        return genericData.getProperty("frontend.url");
-    }
+    public static final String HOMEPAGE_LINK = genericData.getProperty("frontend.url");
 }
