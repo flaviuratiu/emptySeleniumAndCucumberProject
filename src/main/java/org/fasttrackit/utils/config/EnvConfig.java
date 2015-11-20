@@ -11,7 +11,7 @@ public class EnvConfig extends Properties {
     private static final Logger LOGGER = Logger.getLogger(EnvConfig.class);
 
     public static final String RESOURCES_PATH = "src/test/resources/";
-    private static final String INIT_CONFIG_PATH = RESOURCES_PATH + "defaultTestConfig.properties";
+    private static final String INIT_CONFIG_PATH = RESOURCES_PATH + "runConfig.properties";
     private static Properties initProperties;
     static Properties browserProperties;
 
