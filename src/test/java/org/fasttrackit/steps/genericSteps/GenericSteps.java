@@ -4,6 +4,7 @@ import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import org.fasttrackit.utils.TestUtils;
+
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.is;
 
@@ -16,7 +17,7 @@ public class GenericSteps extends TestBase {
 
     @And("^I wait (\\d+) second(?:s*)$")
     public void waitSeconds(int seconds) {
-        TestUtils.sleep(seconds);
+        TestUtils.sleep(seconds * 1000);
     }
 
     @Then("^I am redirected to \"([^\"]*)\"$")
